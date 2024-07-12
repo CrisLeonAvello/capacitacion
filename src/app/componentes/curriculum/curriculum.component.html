@@ -1,58 +1,75 @@
+<!-- curriculum.component.html -->
+
 <body>
     <header>
-      <h1>¿Quién soy exactamente?</h1>
+      <mat-toolbar color="primary" [@toolbarAnimation]>
+        <span class="logo">¿Quién soy exactamente?</span>
+      </mat-toolbar>
     </header>
   
-    <section class="perfil">
+    <section class="perfil" [@sectionAnimation]>
       <article>
-        <h2>Mi nombre es Cristian León Avello</h2>
-        <p>
-          Tengo 20 años y soy estudiante de 2° año de ingeniería en computación e informática
-          de la Universidad Andrés Bello.
-        </p>
-        <p>
-          Tengo experiencia en lenguajes como Python, JavaScript, C++.
-          Además manejo tecnologías como Angular, React, MySQL, NodeJS y CSS.
-        </p>
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>Mi nombre es Cristian León Avello</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Tengo 20 años y soy estudiante de 2° año de ingeniería en computación e informática
+              de la Universidad Andrés Bello.
+            </p>
+            <p>
+              Tengo experiencia en lenguajes como Python, JavaScript, C++. Además manejo tecnologías como Angular, React, MySQL, NodeJS y CSS.
+            </p>
+          </mat-card-content>
+        </mat-card>
       </article>
     </section>
   
-    <section class="academico">
-      <h1>Antecedentes Académicos</h1>
-      <article>
-        <h2>Enseñanza Media Completa</h2>
-        <p>Sunnyland School (Periodo 2009-2021)</p>
-        <h2>Educación Superior</h2>
-        <p>Ingeniería en Computación informática - Universidad Andrés Bello (2023 - hoy)</p>
-      </article>
+    <section class="academico" [@sectionAnimation]>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Antecedentes Académicos</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <article>
+            <h2>Enseñanza Media Completa</h2>
+            <p>Sunnyland School (Periodo 2009-2021)</p>
+            <h2>Educación Superior</h2>
+            <p>Ingeniería en Computación informática - Universidad Andrés Bello (2023 - hoy)</p>
+          </article>
+        </mat-card-content>
+      </mat-card>
     </section>
   
-    <section class="laboral">
-      <h1>Experiencia Laboral</h1>
-      <article>
-        <h2>GRIDO - San Felipe</h2>
-        <p>Cargo: Atención al cliente</p>
-        <p>Periodo: Septiembre 2021 - Noviembre 2021</p>
-        <p>Funciones Principales: Responsable de entregar helados</p>
-      </article>
+    <section class="laboral" [@sectionAnimation]> 
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Experiencia Laboral</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <article>
+            <h2>GRIDO - San Felipe</h2>
+            <p>Cargo: Atención al cliente</p>
+            <p>Periodo: Septiembre 2021 - Noviembre 2021</p>
+            <p>Funciones Principales: Responsable de entregar helados</p>
+          </article>
   
-      <article>
-        <h2>Falabella Retail S.A - San Felipe</h2>
-        <p>Cargo: Asistente de apoyo para época navideña - atención al cliente - reponedor</p>
-        <p>Periodo: Diciembre 2021 - Enero 2022</p>
-        <p>Funciones Principales: Gestión de Atención al Cliente y Asistencia Integral al Personal, 
-           donde además mantuve deberes de reponedor en áreas destinadas a la comercialización expédita
-        </p>
-      </article>
+          <article>
+            <h2>Falabella Retail S.A - San Felipe</h2>
+            <p>Cargo: Asistente de apoyo para época navideña - atención al cliente - reponedor</p>
+            <p>Periodo: Diciembre 2021 - Enero 2022</p>
+            <p>Funciones Principales: Gestión de Atención al Cliente y Asistencia Integral al Personal, donde además mantuve deberes de reponedor en áreas destinadas a la comercialización expédita</p>
+          </article>
   
-      <article>
-        <h2>Flexit S.A.</h2>
-        <p>Cargo: Especialista en cargos multifuncionales</p>
-        <p>Periodo: Julio 2022 - Noviembre 2023</p>
-        <p>Funciones: Mi cargo variaba según la necesidad del turno,
-           donde generalmente era la atención al cliente y la venta satisfactoria de los productos.
-        </p>
-      </article>
+          <article>
+            <h2>Flexit S.A.</h2>
+            <p>Cargo: Especialista en cargos multifuncionales</p>
+            <p>Periodo: Julio 2022 - Noviembre 2023</p>
+            <p>Funciones: Mi cargo variaba según la necesidad del turno, donde generalmente era la atención al cliente y la venta satisfactoria de los productos.</p>
+          </article>
+        </mat-card-content>
+      </mat-card>
     </section>
   </body>
   

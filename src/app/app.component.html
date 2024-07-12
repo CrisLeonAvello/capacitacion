@@ -1,26 +1,22 @@
-<body>
-<h1>Bienvenido a mi página Web</h1>
-<h2>Aquí hallarás información sobre mi y como contactarme.<br>
-    Cabe destacar que este es mi primer proyecto en angular
-</h2>
+<body class="mat-typography">
 
-<nav>
-  <ul>
-    <li>
-      <button><a routerLink="/curriculum">quien soy</a></button>
-    </li>
-    <li>
-      <button><a routerLink="/galeria">galeria</a></button>
-    </li>
-    <li>
-      <button><a routerLink="/contacto">contactame</a></button>
-    </li>
-  </ul>
-</nav>
+  <section class="titulo mat-elevation-z2">
+    <h1>Bienvenido a mi página Web</h1>
+    <h2>Aquí encontrarás información sobre mí y cómo contactarme.<br>
+        Cabe destacar que este es mi primer proyecto en Angular.
+    </h2>
+  </section>
 
-<router-outlet></router-outlet>
+  <nav class="mat-elevation-z3">
+    <ul class="mat-list mat-nav-list">
+      
+        <button mat-button><a routerLink="/curriculum">Quién soy</a></button>
+        <button mat-button><a routerLink="/galeria">Galería</a></button>
+        <button mat-button><a routerLink="/contacto">Contáctame</a></button>
 
+    </ul>
+  </nav>
 
+  <router-outlet></router-outlet>
 
 </body>
-
