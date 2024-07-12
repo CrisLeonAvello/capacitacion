@@ -1,1 +1,23 @@
-<p>contacto works!</p>
+<body class="contacto">
+    <h1>Contactame :D</h1>
+    <h2> Rellena el formulario de abajo para que hablemos</h2>
+<form [formGroup]="form()">
+
+    <label>
+       <b>nombre:</b>
+        <input type="text" formControlName="name">
+    </label>
+
+    <label class = 'mensaje'>
+        <b>Email:</b>
+        <input type="email" formControlName="email">
+    </label>
+
+    <label class = 'mensaje'><br>
+        <textarea placeholder=" "></textarea>
+    </label>
+
+    <button type="submit">enviar</button>
+
+</form>
+</body>
