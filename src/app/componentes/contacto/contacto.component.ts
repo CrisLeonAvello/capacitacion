@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -9,15 +9,14 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './contacto.component.css'
 })
 export class ContactoComponent {
-  form = signal<FormGroup>(
-    new FormGroup(
+  form =  new FormGroup(
       {
         name: new FormControl(''),
         Email: new FormControl(''),
         Message: new FormControl(''),
       }
     )
-
-  )
-
+  sendcontact(){
+  console.log(this.form)
+  }
 }

@@ -1,1 +1,14 @@
-<p>galeria works!</p>
+<body>
+
+  <head>
+      <h1> bienvenido a mi Galería</h1>
+  </head>
+
+  <div class="gallery">
+    <div class="image" *ngFor="let photo of photos">
+      <img [src]="photo.url" [alt]="photo.title">
+      <p>{{ photo.title }}</p>
+    </div>
+  </div>
+
+</body>
